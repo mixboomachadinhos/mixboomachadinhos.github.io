@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>MixBoom Achadinhos – ofertas da Shopee</title>
+<meta name="description" content="Achadinhos da Shopee com preço de verdade. Ofertas novas todo dia.">
+<meta property="og:title" content="MixBoom Achadinhos">
+<meta property="og:description" content="Achadinhos da Shopee com preço de verdade. Ofertas novas todo dia.">
+<meta property="og:image" content="logo.png">
+<meta name="theme-color" content="#FE5F02">
+<link rel="icon" href="logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700;800&family=Nunito:wght@500;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--laranja:#FE5F02;--laranja2:#FF8A1F;--amarelo:#FFD600;--tinta:#1E1206;--creme:#FFF6EA;--cinza:#8A7A6A}
+*{box-sizing:border-box;margin:0}
+body{font-family:Nunito,system-ui,sans-serif;background:var(--creme);color:var(--tinta);-webkit-font-smoothing:antialiased}
+header{background:radial-gradient(circle at 20% -20%,var(--laranja2),var(--laranja) 60%);color:#fff;padding:28px 18px 64px;text-align:center;position:relative;overflow:hidden}
+header:before,header:after{content:"✦";position:absolute;color:var(--amarelo);font-size:28px;opacity:.85}
+header:before{left:8%;top:22px}header:after{right:9%;top:70px;font-size:20px}
+.logo{width:96px;height:96px;border-radius:50%;border:4px solid #fff;box-shadow:0 6px 18px rgba(0,0,0,.25)}
+h1{font-family:"Baloo 2",sans-serif;font-weight:800;font-size:30px;line-height:1;margin-top:10px;letter-spacing:.3px}
+h1 span{color:var(--amarelo);display:block;font-size:24px;letter-spacing:1.5px}
+.sub{margin-top:8px;font-weight:700;opacity:.95;font-size:15px}
+.ig{display:inline-block;margin-top:12px;background:rgba(255,255,255,.18);color:#fff;text-decoration:none;font-weight:800;font-size:13px;padding:7px 14px;border-radius:99px}
+.busca{max-width:560px;margin:-34px auto 0;padding:0 14px;position:relative;z-index:2}
+.busca input{width:100%;font:700 16px Nunito,sans-serif;padding:15px 18px 15px 46px;border-radius:16px;border:0;box-shadow:0 8px 24px rgba(120,50,0,.18);outline:3px solid transparent;background:#fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='none' stroke='%23FE5F02' stroke-width='2.6' stroke-linecap='round'%3E%3Ccircle cx='8.5' cy='8.5' r='6.5'/%3E%3Cpath d='m13.5 13.5 5 5'/%3E%3C/svg%3E") 16px center no-repeat}
+.busca input:focus{outline-color:var(--amarelo)}
+.chips{display:flex;gap:8px;overflow-x:auto;padding:16px 14px 4px;max-width:560px;margin:0 auto;scrollbar-width:none}
+.chip{flex:none;border:2px solid var(--laranja);background:#fff;color:var(--laranja);font:800 14px Nunito,sans-serif;padding:8px 14px;border-radius:99px;cursor:pointer}
+.chip.on{background:var(--laranja);color:#fff}
+main{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:12px;padding:14px;max-width:980px;margin:0 auto}
+.card{background:#fff;border-radius:18px;overflow:hidden;box-shadow:0 3px 12px rgba(120,50,0,.09);display:flex;flex-direction:column;scroll-margin-top:12px}
+.card:target{outline:4px solid var(--amarelo)}
+.foto{position:relative;aspect-ratio:1;background:#f4ece2}
+.foto img{width:100%;height:100%;object-fit:cover;display:block}
+.num{position:absolute;left:8px;top:8px;background:var(--tinta);color:#fff;font:800 12px Nunito,sans-serif;padding:3px 8px;border-radius:8px}
+.off{position:absolute;right:8px;top:8px;background:#EE2D2D;color:#fff;font:800 13px Nunito,sans-serif;padding:3px 8px;border-radius:8px}
+.novo{position:absolute;left:8px;bottom:8px;background:var(--amarelo);color:var(--tinta);font:800 11px Nunito,sans-serif;padding:3px 8px;border-radius:8px;letter-spacing:.5px}
+.info{padding:10px 12px 12px;display:flex;flex-direction:column;gap:4px;flex:1}
+h2{font-size:15px;line-height:1.25;font-weight:800}
+.prova{font-size:12px;color:var(--cinza);font-weight:700}
+.precos{margin-top:auto;padding-top:4px;display:flex;flex-direction:column}
+.de{font-size:12px;color:var(--cinza);text-decoration:line-through}
+.por{font-family:"Baloo 2",sans-serif;font-size:22px;font-weight:800;color:var(--laranja);line-height:1.1}
+.btn{display:block;text-align:center;background:linear-gradient(180deg,var(--laranja2),var(--laranja));color:#fff;text-decoration:none;font-weight:800;font-size:15px;padding:11px 8px;border-radius:12px;margin-top:6px;box-shadow:0 3px 0 #C84500}
+.btn:active{transform:translateY(2px);box-shadow:0 1px 0 #C84500}
+.reel{text-align:center;font-size:12px;font-weight:800;color:var(--laranja);text-decoration:none;padding-top:4px}
+.vazio{grid-column:1/-1;text-align:center;color:var(--cinza);font-weight:700;padding:30px 0;display:none}
+footer{text-align:center;font-size:12px;color:var(--cinza);padding:18px 20px 34px;max-width:560px;margin:0 auto;line-height:1.5}
+@media(min-width:700px){main{grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:16px}h1{font-size:38px}}
+</style>
+</head>
+<body>
+<header>
+  <img class="logo" src="logo.png" alt="MixBoom Achadinhos">
+  <h1>MixBoom <span>ACHADINHOS</span></h1>
+  <p class="sub">Ofertas da Shopee com preço de verdade 🛒</p>
+  <a class="ig" href="https://www.instagram.com/mixboom.achadinhos/" target="_blank" rel="noopener">@mixboom.achadinhos</a>
+</header>
+<div class="busca"><input id="q" type="search" placeholder="Procure: tênis, pisca, bola..." autocomplete="off"></div>
+<nav class="chips">
+  <button class="chip on" data-f="todos">Todos</button>
+  <button class="chip" data-f="novos">🔥 Novos</button>
+  <button class="chip" data-f="50">Até R$ 50</button>
+  <button class="chip" data-f="100">Até R$ 100</button>
+</nav>
+<main id="lista">
+    <article class="card" id="n1" data-busca="tênis infantil led tenis infantil led menina feminino luz pisca pisca club happy" data-preco="79.95" data-novo="1">
+      <div class="foto">
+        <img src="img/53267157927.jpg" alt="Tênis infantil Led" loading="lazy" width="600" height="600">
+        <span class="num">Nº 1</span><span class="off">-60%</span>
+        <span class="novo">NOVO</span>
+      </div>
+      <div class="info">
+        <h2>Tênis infantil Led</h2>
+        <p class="prova">⭐ 5,0 · 842 curtidas</p>
+        <p class="precos"><span class="de">R$ 199,90</span><span class="por">R$ 79,95</span></p>
+        <a class="btn" href="https://shope.ee/an_redir?origin_link=https%3A%2F%2Fshopee.com.br%2Fproduct%2F499950777%2F53267157927&amp;affiliate_id=18179990012&amp;sub_id=igbio" target="_blank" rel="noopener sponsored">Ver na Shopee →</a>
+        <a class="reel" href="https://www.instagram.com/reel/DgF_OSISOHZ/" target="_blank" rel="noopener">▶ ver vídeo</a>
+      </div>
+    </article>
+  <p class="vazio" id="vazio">Nenhum achadinho encontrado 😕</p>
+</main>
+<footer>
+  Os links desta página são links de afiliado da Shopee: você paga o mesmo preço e nós podemos ganhar uma pequena comissão. 💛
+  Os preços são os da Shopee no dia do post e podem mudar.<br>Atualizado em 23/11/2026 20:23.
+</footer>
+<script>
+const q=document.getElementById('q'),cards=[...document.querySelectorAll('.card')],vazio=document.getElementById('vazio');
+let filtro='todos';
+const tira=s=>s.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
+function aplicar(){const t=tira(q.value.trim());let n=0;
+  for(const c of cards){const p=+c.dataset.preco;
+    let ok=(!t||tira(c.dataset.busca).includes(t)||('n'+c.id.slice(1))===t.replace(/[^n0-9]/g,''));
+    if(filtro==='novos')ok=ok&&c.dataset.novo==='1';
+    if(filtro==='50')ok=ok&&p<=50; if(filtro==='100')ok=ok&&p<=100;
+    c.style.display=ok?'':'none'; if(ok)n++;}
+  vazio.style.display=n?'none':'block';}
+q.addEventListener('input',aplicar);
+document.querySelectorAll('.chip').forEach(b=>b.onclick=()=>{document.querySelectorAll('.chip').forEach(x=>x.classList.remove('on'));b.classList.add('on');filtro=b.dataset.f;aplicar();});
+</script>
+</body>
+</html>
